@@ -1,0 +1,51 @@
+/* body */
+body {
+  display: inline-block;
+}
+
+/* nav */
+header {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__menu-icon,
+.nav__close-icon {
+  background: none;
+  border: none;
+}
+
+@media screen and (max-width: 31.25em) {
+  .primary-navigation {
+    position: fixed;
+    flex-direction: column;
+    inset: 0 0 0 50%;
+    background: hsl(0 0 100% / .25);
+    backdrop-filter: blur(1rem);
+    z-index: 100;
+    gap: 0;
+    padding: min(30vh, 2em) 2em
+  }
+
+
+
+  /* main */
+  main.home {
+    flex-wrap: wrap;
+  }
+
+
+
+  /* components */
+  /* mobile view */
+
+
+  /* tablet view */
+  @media screen and (min-width: 31.25em) {
+    .mobile-view-only {
+      display: none;
+    }
+  }
+
+  /* desktop view */
+  @media screen and (min-width:68.75em) {}

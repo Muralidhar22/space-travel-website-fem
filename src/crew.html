@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png"> -->
+
+    <!-- stlyesheet -->
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Space tourism website</title>
+</head>
+
+<body>
+    <nav class="flex primary-navigation underline-indicators">
+        <a class="numbered-title text-white page-title" data-page="home" href="./index.html"><span>01</span>Home</a>
+        <a class="numbered-title text-white page-title" data-page="destinations"
+            href="./destination.html"><span>02</span>Destination</a>
+        <a class="numbered-title text-white active page-title" data-page="crew"
+            href="./crew.html"><span>03</span>Crew</a>
+        <a class="numbered-title text-white page-title" data-page="technology"
+            href="./technology.html"><span>04</span>Technology</a>
+    </nav>
+    <div class="container">
+        <h1 class="fs-600 ff-sans-normal numbered-title uppercase"><span>02</span>meet you crew</h1>
+        <div class="container__content-wrapper flex">
+            <main>
+                <p class="crew-member-role"><span class="sr-only">crew member role</span></p>
+                <h2 class="crew-member-name"><span class="sr-only">crew member name</span></h2>
+                <p class="crew-member-bio"><span class="sr-only">crew member bio</span></p>
+            </main>
+            <div class="crew-member-img"><span class="sr-only">crew memeber image</span></div>
+        </div>
+        <div class="dot-indicators">
+            <button class="crew active" data-index=0 aria-selected="true"><span
+                    class="sr-only">commander</span></button>
+            <button class="crew" data-index=1><span class="sr-only">mission specialist</span></button>
+            <button class="crew" data-index=2><span class="sr-only">pilot</span></button>
+            <button class="crew" data-index=3><span class="sr-only">flight engineer</span></button>
+        </div>
+    </div>
+    <script src="./lib/crew.js" type="module"></script>
+    <script src="./scripts.js" type="module"></script>
+</body>
+
+</html>

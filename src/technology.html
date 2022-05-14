@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png"> -->
+
+    <!-- stlyesheet -->
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Space tourism website</title>
+</head>
+
+<body>
+    <nav class="flex primary-navigation underline-indicators">
+        <a class="numbered-title text-white page-title" data-page="home" href="./index.html"><span>01</span>Home</a>
+        <a class="numbered-title text-white page-title" data-page="destinations"
+            href="./destination.html"><span>02</span>Destination</a>
+        <a class="numbered-title text-white page-title" data-page="crew" href="./crew.html"><span>03</span>Crew</a>
+        <a class="numbered-title text-white active page-title" data-page="technology"
+            href="./technology.html"><span>04</span>Technology</a>
+    </nav>
+    <div class="container">
+        <h1 class="numbered-title uppercase"><span>03</span>space launch 101</h1>
+        <div class="container__content-wrapper flex">
+            <div class="numbered-indicators grid">
+                <button data-index=0 class="bg-dark technology active" aria-selected="true">1</button>
+                <button data-index=1 class="bg-dark technology">2</button>
+                <button data-index=2 class="bg-dark technology">3</button>
+            </div>
+            <main>
+                <p class="ff-sans-cond fs-200 uppercase">the terminology...</p>
+                <h1 class="technology-name uppercase fs-700 ff-serif"><span class="sr-only">techology name</span></h1>
+                <p class="technology-description"><span class="sr-only">technology description</span></p>
+            </main>
+            <div class="technology-img"><span class="sr-only">technology-img</span></div>
+
+        </div>
+    </div>
+    <script src="./lib/technology.js" type="module"></script>
+    <script src="./scripts.js" type="module"></script>
+</body>
+
+</html>
